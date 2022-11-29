@@ -1,0 +1,44 @@
+---
+title: "Final Project - MultiK"
+author: 
+  - name: "Amy Banka"
+  - email: abanka@arizona.edu
+output:
+  pdf_document:
+    toc: yes
+  html_notebook:
+    code_folding: show
+    toc: yes
+  html_document:
+    toc: yes
+    df_print: paged
+---
+# Background Info
+## Goal 
+This is for INFO 523 - final project.  I'm going to **attempt** to implement the multiK package.
+
+## MultiK
+MultiK is meant to **guide** your clustering efforts for scRNA-seq data. If I remember, I'll link the Youtube video of me explaining wtf I'm talking about.
+
+### Please note
+There is no **ideal** clustering. There's not necessarily a *right* answer. There's information to be had and debate for any amount of clustering with this type of data.  Therefore, this is one way of exploring clustering and it can inform the final clustering decisions.
+
+***
+# Programming
+
+0. Always figure out your working directory/path situation
+```{r}
+library(here)
+```
+
+1. Load in your packages
+```{r warning=TRUE, include=FALSE}
+library(MultiK)
+library(Seurat)
+library(sigclust)
+library(tidyverse)
+```
+
+***
+
+
