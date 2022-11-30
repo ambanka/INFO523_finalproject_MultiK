@@ -12,3 +12,6 @@ You're going to need the following packages
 MultiK can be downloaded with `devtools::install_github("siyao-liu/MultiK")`
 
 
+You can find the final presentation on [Google Drive](https://drive.google.com/file/d/1ajBX7R_ZsI8FOYgk9-l427Ih_HfJMo58/view?usp=sharing) or maybe through [Box](https://arizona.box.com/s/b48sx3iojs30d68n5zyl86jaygxkapyq)
+
+
