@@ -40,5 +40,54 @@ library(tidyverse)
 ```
 
 ***
+## Worked Example
+1. MultiK comes with a dataset we can run a trial on
+```{r}
+# it's a mixture of 3 cell lines (types)
+example_data <- MultiK::p3cl
+example_data
+```
+2. Run the main algo to determine an appropriate # of clusters
+```{r message=FALSE, warning=FALSE, results = "hide"}
+multik <- MultiK::MultiK(example_data, reps = 100)
+```
+
+3. Let's make those diagnostic plots
+```{r}
+MultiK::DiagMultiKPlot(multik$k, multik$consensus)
+```
+***
+### Let's look at those results!
+```{r}
+clusters <- getClusters(example_data, 3)
+```
+
+```{r}
+pval <- CalcSigClust(example_data, clusters$clusters)
+```
+
+```{r}
+PlotSigClust(example_data, clusters$clusters, pval)
+```
+
+***
+### And then you can add that info back onto your Seurat & use it as you see fit for downstream analyses.
+I've chosen not to include this because it's outside the scope of this project!
+
+***
+### Thanks so much!
+You can find the presentation info in the ReadMe
+
+
+
+
+
+
+
+
+
+
+
+
 
 
