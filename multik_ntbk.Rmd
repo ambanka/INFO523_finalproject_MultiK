@@ -76,7 +76,7 @@ I've chosen not to include this because it's outside the scope of this project!
 
 ***
 ### Thanks so much!
-You can find the presentation at 
+You can find the presentation info in the ReadMe
 
 
 
