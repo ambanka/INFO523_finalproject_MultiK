@@ -49,26 +49,25 @@ example_data
 ```
 2. Run the main algo to determine an appropriate # of clusters
 ```{r message=FALSE, warning=FALSE, results = "hide"}
-# I've set this not to run when it knit because it takes 3 hours to run
-# multik <- MultiK::MultiK(example_data, reps = 100)
+multik <- MultiK::MultiK(example_data, reps = 100)
 ```
 
 3. Let's make those diagnostic plots
 ```{r}
-#MultiK::DiagMultiKPlot(multik$k, multik$consensus)
+MultiK::DiagMultiKPlot(multik$k, multik$consensus)
 ```
 ***
 ### Let's look at those results!
 ```{r}
-#clusters <- getClusters(example_data, 3)
+clusters <- getClusters(example_data, 3)
 ```
 
 ```{r}
-#pval <- CalcSigClust(example_data, clusters$clusters)
+pval <- CalcSigClust(example_data, clusters$clusters)
 ```
 
 ```{r}
-#PlotSigClust(example_data, clusters$clusters, pval)
+PlotSigClust(example_data, clusters$clusters, pval)
 ```
 
 ***
